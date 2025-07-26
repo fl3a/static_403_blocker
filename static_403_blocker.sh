@@ -4,7 +4,7 @@ set -x
 
 PATH=/usr/bin:$PATH
 WEBROOT="$HOME/florian.latzel.io"
-BLOCKLIST="$HOME/repos/block_static_paths/blocklist.txt"
+BLOCKLIST="$HOME/repos/static_403_blocker/blocklist.txt"
 
 [ -f "$BLOCKLIST" ] || { echo "Missing blocklist: $BLOCKLIST" >&2; exit 1; }
 
