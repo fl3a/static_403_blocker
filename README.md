@@ -5,7 +5,7 @@ by pre-creating forbidden files and directories with restrictive permissions.
 
 This script helps reduce 404 log noise 
 and proactively denies access to known attack vectors 
-such as `.env`, `/wp-login.php`, or `/vendor/` — without relying on `.htaccess` 
+such as `.env`, `/wp-login.php`, or `/vendor/` without relying on `.htaccess` 
 or runtime processing.
 
 ## Motivation
