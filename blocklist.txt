@@ -30,7 +30,7 @@ config.yml
 controller/
 core/
 css.php
-dashboard/phpinfo.php
+dashboard/
 debug/
 debug/
 env/
@@ -50,8 +50,6 @@ examples/
 .gitignore
 graphql/
 home/                                                                   
-.htaccess
-.htpasswd
 images/
 ini.php
 info.php
