@@ -1,4 +1,4 @@
-# static-403-blocker
+# static_403_blocker
 
 Block unwanted scanner and crawler traffic on static websites 
 by pre-creating forbidden files and directories with restrictive permissions.
