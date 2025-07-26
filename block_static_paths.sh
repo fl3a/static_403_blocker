@@ -2,33 +2,38 @@
 
 set -x
 
+PATH=/usr/bin:$PATH
 WEBROOT="$HOME/florian.latzel.io"
 BLOCKLIST="$HOME/repos/block_static_paths/blocklist.txt"
 
-while IFS= read -r PATH; do
+[ -f "$BLOCKLIST" ] || { echo "Missing blocklist: $BLOCKLIST" >&2; exit 1; }
 
-  PATH="${PATH#"${PATH%%[![:space:]]*}"}"  # trim leading
-  PATH="${PATH%"${PATH##*[![:space:]]}"}"  # trim trailing
+while IFS= read -r LINE; do
+
+  # Trim leading/trailing whitespace
+  LINE="${LINE#"${LINE%%[![:space:]]*}"}"  # trim leading
+  LINE="${LINE%"${LINE##*[![:space:]]}"}"  # trim trailing
+ 
+  # Skip comments and empty lines 
+  [[ -z "$LINE" || "$LINE" =~ ^# ]] && continue
   
-  [[ -z "$PATH" || "$PATH" =~ ^# ]] && continue
+  # Skip if empty file or empty directory already exists
+  CLEAN_LINE="${LINE#/}"
+  FULL="$WEBROOT/$CLEAN_LINE"
+  type=$(LC_ALL=C stat -c "%F" "$FULL" 2>/dev/null)
+  [[ "$type" == "directory" || "$type" == "regular empty file" ]] && continue;
 
-  FULL="$WEBROOT/$PATH"
-  [ -z "$FULL" ] && continue
-
-  if [[ "$PATH" == */ ]]; then    
-    if [ ! -e "$FULL/.blocked" ]; then
-      /usr/bin/mkdir -p "$FULL"
-      /usr/bin/touch "$FULL/.blocked"
-      /usr/bin/chmod 000 "$FULL" "$FULL/.blocked"
-      echo "[403] Directory blocked: $PATH"
-    fi
-  else
-    if [ ! -f "$FULL" ]; then
-      /usr/bin/mkdir -p "$(/usr/bin/dirname "$FULL")"
-      /usr/bin/touch "$FULL"
-      /usr/bin/chmod 000 "$FULL"
-      echo "[403] File blocked: $PATH"
-    fi
-  fi
+  case "$LINE" in 
+    */)    
+      mkdir -p "$FULL"
+      chmod 000 "$FULL"
+      echo "[403] Directory blocked: $LINE"
+      ;;
+    *)
+      touch "$FULL"
+      chmod 000 "$FULL"
+      echo "[403] File blocked: $LINE"
+      ;;
+  esac
 done < "$BLOCKLIST"
 
