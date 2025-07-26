@@ -34,7 +34,7 @@ and the script automatically distinguishes them from files.
 
 ## Example `blocklist.txt`
 
-```text
+```
 # Common scan targets
 .env
 wp-login.php
@@ -46,6 +46,7 @@ vendor/
 wp-admin/
 wp-content/
 .git/
+```
 
 ## Usage
 
@@ -65,7 +66,7 @@ Example execution in a [Jekyll deployment](
 https://github.com/fl3a/jekyll_deployment) via [post_exec task](
 https://github.com/fl3a/florian.latzel.io/blob/a05e016e82dd336e1c7fc2ea6b63a9e1d4e4e45b/deploy.conf#L51) 
 
-  post_exec="/home/kdoz/bin/static_403_blocker.sh"
+    post_exec="/home/kdoz/bin/static_403_blocker.sh"
 
 ## Notes
 
