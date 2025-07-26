@@ -50,10 +50,13 @@ wp-content/
 
 ## Usage
 
-Make sure the script is executable and your environment is set:
+Make the script is executable:
 
-  chmod +x static_403_blocker.sh
-  ./static_403_blocker.sh
+    chmod +x static_403_blocker.sh
+
+Place it within your `$PATH` or call it directly:
+    
+    ./static_403_blocker.sh
 
 Adjust variables inside the script as needed:
 
@@ -65,6 +68,7 @@ Adjust variables inside the script as needed:
 Example execution in a [Jekyll deployment](
 https://github.com/fl3a/jekyll_deployment) via [post_exec task](
 https://github.com/fl3a/florian.latzel.io/blob/e766c92f939a1ce7106af8fe8481ba9a476857d6/deploy.conf#L51) 
+for [florian.latzel.io](https://florian.latzel.io/).
 
     post_exec="/home/kdoz/bin/static_403_blocker.sh"
 
