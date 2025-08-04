@@ -162,8 +162,8 @@
 ALFA_DATA/
 Archive.zip
 BACKUP/
-Backup/
 Backup.zip
+Backup/
 CHANGELOG.md
 Capfile
 Dockerfile
@@ -260,7 +260,6 @@ apps/
 appsettings.json
 appveyor.yml
 ar.php
-archiv.html
 archivarix.cms.php
 archive.zip
 article.php
@@ -411,7 +410,7 @@ cron/
 css.php
 css/
 custom-plugin.php
-cyberscan/.html
+cyberscan/
 dash/.env
 dashboard/
 data.mdb
@@ -469,7 +468,6 @@ env.js
 env.php
 env.zip
 env/
-environment
 environments/
 epinyins.php
 erin1.PhP7
@@ -497,10 +495,8 @@ filemanager/
 filename.php
 files.php
 files/
-files/index.php
 firebase.json
 firewall.php7
-florian-fl3a-latzel.html
 flower.php
 flyriver.com
 fm.php
@@ -538,7 +534,6 @@ id_dsa
 id_ecdsa
 id_rsa
 id_rsa.pub
-images/
 inc.php
 include/
 index-dev.php
@@ -873,7 +868,7 @@ wordpress.zip
 wordpress/
 worksec.php
 wp-2019.php
-wp-22.php?sxallsitemap.xml
+wp-22.php
 wp-aa.php
 wp-activat.php
 wp-activate.php
@@ -914,7 +909,6 @@ wp-sigunq.php
 wp-trackback.php
 wp.php
 wp/
-wp/                                                                     
 wp1/
 wp2/
 ws.php
