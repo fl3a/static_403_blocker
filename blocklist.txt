@@ -33,7 +33,6 @@
 .config.js
 .config/
 .cpanel/
-.cpanel/caches/config/.env
 .database
 .database.bak
 .database.sql
@@ -301,7 +300,6 @@ Www/
 __tests__/
 _all_dbs
 _ignition/
-_ignition/execute-solution
 _logs.php
 _next/
 _phpinfo.php
@@ -581,8 +579,6 @@ dash/.env
 dashboard/
 data.mdb
 data/
-data/.env
-data/aws/credentials
 data_bags/
 database.bak
 database.php
@@ -668,7 +664,7 @@ es.php
 etc/
 evatusmk.php
 examples/
-exapi/.env
+exapi/
 execute.php
 f.php
 f35.php
@@ -774,9 +770,7 @@ index-dev.php
 index.bak.php
 index.js
 index.old.php
-index.php
 index.php/
-index.php/feed/atom/
 index/
 indosec.php
 info
@@ -1056,7 +1050,7 @@ sendgrid.env
 sendgrid.json
 sendgrid.key
 sendgrid.php
-sendgrid_email/.env
+sendgrid_email/
 sendgrid_keys
 sendgrid_keys.js
 sendgrid_keys.json
@@ -1125,7 +1119,7 @@ smtp/
 smtp_config.js
 source_code.zip
 spec/
-spring_boot/.env
+spring_boot/
 sql.log
 src.zip
 src/
@@ -1242,7 +1236,7 @@ webstatic/
 webui/
 whturk/
 wi.php
-widwsisw/i/shx.php
+widwsisw/
 wikindex.php
 windows/
 wordpress
@@ -1256,8 +1250,6 @@ wp-activat.php
 wp-activate.php
 wp-admin.php
 wp-admin/
-wp-admin/install.php
-wp-admin/setup-config.php
 wp-api.php
 wp-back.php
 wp-blog-header.php
