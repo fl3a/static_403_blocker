@@ -3,6 +3,11 @@
 Block unwanted scanner and crawler traffic on static websites 
 by pre-creating forbidden files and directories with restrictive permissions.
 
+The `blocklist.txt` is a living document: it grows continuously 
+as recurring unwanted requests are identified in server logs.  
+The version included in this repository is kept up to date, 
+reflecting the current protection rules in active use.
+
 This script helps reduce 404 log noise 
 and proactively denies access to known attack vectors 
 such as `.env`, `/wp-login.php`, or `/vendor/` without relying on `.htaccess` 
@@ -32,20 +37,36 @@ This script offers a robust alternative:
 Directories can be marked with a trailing `/`, e.g. `vendor/`, 
 and the script automatically distinguishes them from files.
 
-## Example `blocklist.txt`
+## `blocklist.txt`
+
+Below are example entries from the current `blocklist.txt`.  
+This list keeps expanding over time, as new patterns are detected and added during routine log analysis.
+
+### Example `blocklist.txt`
 
 ```
-# Common scan targets
+# Common probe targets
 .env
 wp-login.php
 composer.lock
 license.txt
 
-# Directories
+# Directories often scanned
 vendor/
 wp-admin/
 wp-content/
 .git/
+
+# Legacy or historical paths
+old/
+backup/
+backup.zip
+index.old.html
+
+# Custom crawler traps
+secret-panel/
+admin-console/
+login.php
 ```
 
 ## Usage
