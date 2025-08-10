@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -x
+#set -x
 
 PATH=/usr/bin:$PATH
 WEBROOT="$HOME/florian.latzel.io"
@@ -25,12 +25,14 @@ while IFS= read -r LINE; do
 
   case "$LINE" in 
     */)    
-      mkdir -p "$FULL"
+      mkdir -p "$FULL" || { echo "Failed to create directory: $FULL" >&2; continue; }
       chmod 000 "$FULL"
       echo "[403] Directory blocked: $LINE"
       ;;
     *)
-      touch "$FULL"
+      DIR=$(dirname "$FULL")
+      [ "$DIR" != "." ] && [ ! -d "$DIR" ] && mkdir -p "$DIR"
+      touch "$FULL" || { echo "Failed to create file: $FULL" >&2; continue; }
       chmod 000 "$FULL"
       echo "[403] File blocked: $LINE"
       ;;
