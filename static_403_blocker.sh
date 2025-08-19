@@ -23,7 +23,7 @@ while IFS= read -r LINE; do
   [[ -z "$LINE" || "$LINE" =~ ^# ]] && continue
 
   # Trim trailing and leading slash 
-  CLEAN_LINE="${LINE#/}" 		  # leading  		
+  CLEAN_LINE="${LINE#/}"                  # leading  		
   FULL="${WEBROOT}/${CLEAN_LINE%/}"       # trailing 
 
   # Skip if file or directory already exists
