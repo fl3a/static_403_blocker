@@ -93,6 +93,58 @@ for [florian.latzel.io](https://florian.latzel.io/).
 
     post_exec="/home/kdoz/bin/static_403_blocker.sh"
 
+## Contribute
+
+Want to contribute to the blocklist? 
+
+Here’s how to safely identify and add unwanted traffic, 
+and don’t forget to create a pull request to share your updates.
+
+1. Check your webserver logs for 404s (Not Found).\
+The command expects Apache logs in Combined Log Format (or vCombined). Update paths and parsing if necessary.\
+It will output the number of hits per URL:
+
+```
+grep ' 404 ' /`path/to/apache-logs \
+  | cut -d'"' -f2 \
+  | awk '{print $2}' \
+  | sort \
+  | uniq -c \
+  | sort -nr \
+  > /path/to/404-count.txt
+```
+
+
+2. Review your 404s **carefully** and remove URLs that actually exist on your website.\
+(You may add them to your .htaccess instead.)\
+This ensures that only scanning attempts remain.
+
+3. Remove the hit counts and leading `/`.
+
+Vim:
+
+    :%s/^\s*\d\+\s\+\/\+\(.*\)$/\1/
+
+Shell:
+
+    sed -E 's/^[[:space:]]*[0-9]+[[:space:]]+\/+(.+)$/\1/' /path/to/404-count.txt
+
+4. Add new scans to `blocklist.txt`:
+  
+```
+cat /path/to/404-count.sh >> /path/to/blocklist.txt
+```
+   
+7. Sort and remove duplicates:
+
+Vim:
+
+    :sort u
+
+Shell:
+
+    sort -u /path/to/blocklist.txt -o /path/to/blocklist.txt
+
 ## Notes
 
 - Requires standard Unix tools: `stat`, `mkdir`, `touch` and `chmod`.
