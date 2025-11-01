@@ -33,6 +33,7 @@
 .cloudfront/
 .config.js
 .config/
+.core.php
 .cpanel/
 .database
 .database.bak
@@ -130,6 +131,7 @@
 .git-credentials
 .git/
 .git/config
+.git2/
 .gitattributes
 .github/
 .gitignore
@@ -139,6 +141,7 @@
 .gitmodules
 .hg/
 .history
+.id_rsa
 .idea/
 .kitchen.yml
 .kube/
@@ -189,6 +192,7 @@
 .vercel/
 .viminfo
 .vimrc
+.vs
 .vscode/
 .well-known/.env
 .well-known/.qiodetme.php
@@ -246,6 +250,7 @@
 .well-known/up.php
 .well-known/worksec.php
 .well-known/wp-load.php
+.well-known/ws.php
 .well-known/xin1.php
 .well-known/xoxo.php
 .well-known/zaza.php
@@ -270,6 +275,7 @@
 0x.php
 0x0x.php
 0x1949.php
+0xx.php
 1.php
 10.php
 100.php
@@ -288,7 +294,9 @@
 124.php
 13.php
 132.php
+133.php
 1337.php
+135.php
 13k.php
 1527011137.php
 16.php
@@ -298,9 +306,14 @@
 1a.php
 1aa.php
 1efa.php
+1index.php
 2.php
 20.php
 200.php
+2018/wp-includes/wlwmanifest.xml
+2019/wp-includes/wlwmanifest.xml
+2020.php
+2020/wp-includes/wlwmanifest.xml
 2025.php
 22.php
 222.php
@@ -331,6 +344,7 @@
 444.php
 45.php
 456.php
+4563.php
 478.php
 48.php
 4a.php
@@ -359,6 +373,7 @@
 888.php
 89.php
 8a.php
+9.php
 900.php
 963e.php
 96i.php
@@ -379,6 +394,7 @@ ALFA_DATA/
 API/
 Admin/
 Alfa.php
+Alvin9999/
 Api/
 Archive.zip
 Assets/
@@ -400,8 +416,10 @@ CHANGELOG.txt
 CLA.php
 Canonical.php
 Capfile
+Coldsellers.php
 Content/
 Controls/
+Core/
 Dockerfile
 ENKI.php
 FCKeditor/
@@ -431,6 +449,7 @@ Okxob.php
 Old/
 Ova-Simple.php
 PAT.txt
+PhpMyAdmin/
 Pipfile
 Pipfile.lock
 Plugin/
@@ -440,9 +459,11 @@ Private-Exploit-Ova.php
 Procfile
 Properties/
 Public/
+RDWeb/
 README.md
 Rakefile
 Readme.txt
+RsR.php
 SHOP/
 SITE/
 Sanskrit.php
@@ -530,7 +551,9 @@ acxx.php
 ad.php
 adm.php
 admi.php
+admin-ajax.php
 admin-app/
+admin-header.php
 admin-post.php
 admin.html
 admin.php
@@ -542,14 +565,18 @@ adminer.php
 adminfuns.php
 adminfuns.php7
 administrator/
+admir.php
 ads.txt
 ae.php
 af.php
 af32.php
+af4.php
 aff.php
 affiliate/contact
 affiliates
+afile.php
 ag.php
+aghbvr.php
 ah.php
 ahax.php
 ai.php
@@ -571,6 +598,7 @@ al.php
 alam.php
 album.cgi
 alex.php
+alexus.php
 alf.php
 alf4.php
 alfa-rex.PhP7
@@ -616,6 +644,7 @@ api-gateway/
 api-token
 api.php
 api/
+api/.env
 api_key
 api_keys/
 apikey
@@ -672,6 +701,7 @@ asd.php
 asd67.php
 asdf.php
 ase.php
+asgtt.php
 aska.cgi
 aspera/
 assacc.php
@@ -685,6 +715,7 @@ assets/admin.php
 assets/admin/
 assets/atomlib.php
 assets/backend/
+assets/bundle.js
 assets/ckeditor/
 assets/color_admin/
 assets/edit.php
@@ -696,6 +727,8 @@ assets/index/kuailian/image/favicon.ico
 assets/item.php
 assets/javascripts/
 assets/jquery-file-upload/
+assets/jqueryfileupload/
+assets/js/app.js
 assets/js/env.js
 assets/js/fast.js
 assets/js/kcfinder/upload.php
@@ -728,6 +761,7 @@ autoload_classmap.php
 autoload_classmap/
 autoloadclassmap.php
 av.php
+av.php.php
 ava.php
 avaa.php
 aves.php
@@ -799,6 +833,7 @@ bak.zip
 bak/
 baker.php
 bal.php
+bala.php
 base/
 bash.php
 batm.php
@@ -818,6 +853,7 @@ berax.php
 berlin.php
 beta/
 bg/
+bge.php
 bild.php
 bin.php
 bin.rar
@@ -830,6 +866,7 @@ bk/
 bk/ 
 bla.php
 bless.php
+bless11.php
 bless2.php
 bless3.php
 bless4.php
@@ -850,6 +887,7 @@ blog.zip
 blog2/
 blogs/root/feed
 blok.php
+blox.php
 blue.php
 bluejackets.php
 blurbs.php
@@ -929,6 +967,7 @@ checkbox.php
 checker.php
 chn.php
 chosen.php
+chosen.php?
 chosen/
 ci-cd/
 ci/
@@ -976,7 +1015,9 @@ cms/
 co.php
 coaster/
 cocot.php
+code.php
 codehu.php
+codex.php
 codicil.php
 cof.php
 coloradmin/
@@ -1030,6 +1071,7 @@ connection.php.bak
 connectionstrings.json
 console.php
 console/
+constants.js
 consultation
 consultation-request
 contact
@@ -1054,6 +1096,7 @@ cookbooks/
 cookie.php
 cool.php
 copypaths.php
+cord.php
 core.php
 core/
 core/TwitterBootstrap/
@@ -1082,6 +1125,7 @@ cyberscan/
 d.php
 d0main.php
 d1.php
+d12.php
 d2.php
 d3.php
 d3s.php
@@ -1191,6 +1235,7 @@ dr.php
 drop-us-a-line
 dropdown.php
 drunk.php
+drupal-6-m/
 ds.php
 dummy.php
 dump.bak
@@ -1200,6 +1245,7 @@ dump.sql.gz
 dump.tar.gz
 dump.zip
 dup-installer/
+dup.php
 dxb.php
 dz.php
 e.php
@@ -1241,6 +1287,7 @@ en/
 en0.php
 enclas.php
 engine.php
+enhancecp
 enrnyfbi.php
 env.backup
 env.js
@@ -1263,6 +1310,7 @@ error.log
 error.php
 error/
 error_log
+errorfile.php
 ertg.php
 es.php
 es/.env
@@ -1297,8 +1345,10 @@ fai.php
 faiy.php
 faq.php
 fass.php
+fast.php
 fav-icon.ico
 favicon.php
+favicon.png
 fck.php
 fckeditor/
 fe5.php
@@ -1308,6 +1358,7 @@ feed/
 feedback
 feedback-form
 feeds.php
+feifq.php
 fetch.php
 fex.php
 ff.php
@@ -1316,6 +1367,8 @@ fffff.php
 ffile.php
 fi2.php
 fie.php
+fifi.php
+fifii.php
 file-manager/
 file.php
 file.php?
@@ -1340,6 +1393,7 @@ file30.php
 file32.php
 file4.php
 file5.php
+file52.php
 file6.php
 file7.php
 file8.php
@@ -1361,6 +1415,7 @@ files/
 filesss.php
 filled.php
 final.php
+finny.php
 fire.php
 firebase.json
 firewall.php7
@@ -1375,6 +1430,7 @@ fm.php
 fm.php?p=
 fm2.php
 fmk.php
+fns.php
 fonts.php
 foo.php
 foot.php
@@ -1397,6 +1453,7 @@ fresh3.php
 frontend/
 frontend_dev.php/
 fs.php
+fso.php
 fss.php
 ftfr.php
 ftp-config.json
@@ -1492,6 +1549,7 @@ gold.php
 golden.php
 good.php
 goods.php
+gool.php
 goto.php
 gqksqsxc.php
 gradle.properties
@@ -1547,6 +1605,7 @@ hidden/
 himu.php
 hk.php
 hlex.php
+hly.php
 hn.php
 home
 home.php
@@ -1556,6 +1615,7 @@ hoot.php
 host_vars/
 hosting.json
 hplfuns.php
+hq.php
 ht.php
 htaccess.php
 html.php
@@ -1573,11 +1633,15 @@ id_rsa
 id_rsa.pub
 ids.php
 if.php
+ifm.php
 ig4i9t.php
 ii.php
 ilex.php
+image.php
+image/
 images/
 img/
+imgs/
 in.php
 inat.php
 inc.php
@@ -1671,8 +1735,10 @@ jpPy0.php
 jq.php
 jquery.filer/
 jquery.php
+jqueryfileupload/
 js.php
 js/
+js/fm.php
 jsp.php
 just2.php
 jx.php
@@ -1680,6 +1746,7 @@ jyntqzmk.php
 k.php
 k8s/
 k90.php
+kairolin.php
 kao.php
 karak.php
 karma.conf.js
@@ -1703,6 +1770,7 @@ kubernetes/
 kwm4.php
 kyami.php
 kyc/
+l.php
 l/
 lab/
 lala.php
@@ -1853,6 +1921,7 @@ mini.php
 mini/
 minik.php
 misc/
+miso.php
 mjq.php
 mk.php
 mlex.php
@@ -1874,7 +1943,9 @@ moo.php
 moon.php
 moon.php=
 mother.php
+motu.php
 mpvloi.php
+mpxct.php
 mr.php
 ms-edit.php
 ms-files.php
@@ -1905,6 +1976,7 @@ nc5.php
 ncms.php
 ncx.php
 nee.php
+neshe.php
 netlify.toml
 network.php
 networks.php
@@ -2001,6 +2073,7 @@ orm.php
 ot.php
 ota.php
 ote.php
+ouh.php
 output.php
 outputs.tf
 outscout.php
@@ -2011,6 +2084,7 @@ ovka.php
 owa/
 owl.php
 oxse.php
+oxshell.php
 oxvrws.php
 p.php
 p1u.php
@@ -2026,13 +2100,16 @@ past.php
 past1.php
 pd.php
 pen.php
+pent.php
 pepe.php
 per.php
 pg_dump.sql
 pgsql.dump
+php-cgi.exe
 php-cgi/
 php-info.php
 php-version.php
+php.exe
 php.ini
 php.php
 php/
@@ -2063,6 +2140,7 @@ phpinfo.php.tmp
 phpinfo.php3
 phpinfo.php4
 phpinfo.php5
+phpinfo.php~
 phpinfo.phtml
 phpinfo/
 phpinfo2.php
@@ -2100,6 +2178,7 @@ pop.php
 portal
 portal/
 post.php
+postnews.php
 pow.php
 pp.php
 ppk.php
@@ -2115,7 +2194,9 @@ private/
 prod/
 product-demo
 production/
+products.json
 products/
+profile.php
 profiler/
 project/
 properties/
@@ -2130,8 +2211,8 @@ psnlink/
 pu.php
 pu1.php
 public/
-public_html/
 public_html.zip
+public_html/
 puibr.php
 puts.php
 pwnd.php
@@ -2152,6 +2233,7 @@ quote-request
 qwturjyu.php
 r.php
 r4f_1.php
+r79.php
 racs3.php
 radio.php
 raf.php
@@ -2176,6 +2258,7 @@ react_app/
 readme.md
 readme.php
 red.php
+redi.php
 redirect.php
 redmine/
 referral/contact
@@ -2198,6 +2281,8 @@ requirements.txt
 res/
 resources/
 resp.php
+rest
+rex.php
 reyna.php
 rjv.php
 rk2.php
@@ -2222,6 +2307,7 @@ rtheq.php
 ruby_app/
 rules.php
 run.php
+runtime.js
 runtime/
 runtime/cache/5.php
 rwloscsm.php
@@ -2245,6 +2331,7 @@ sa.php
 sa.php7
 saas/
 sad.php
+sadis.php
 saiga.php
 sale.php
 sales
@@ -2338,6 +2425,7 @@ sftp.json
 sh.php
 shade.php
 shared/
+shared/.env
 shell
 shell.php
 shell/
@@ -2345,6 +2433,7 @@ shell1.php
 shell20211028.php
 shell20250630.php
 shell_wso.php7
+shellalfa.php
 shellv3.php
 shlo.php
 shoha.php
@@ -2358,6 +2447,7 @@ shxrtr.php
 sid.php
 signin
 signup.php
+siln.php
 sim.php
 simp.php
 simple.php
@@ -2385,6 +2475,7 @@ sito/
 size.php
 sjcawlic.php
 sk.php
+sk25_1.php
 slack_token
 slack_webhook
 slcj.php
@@ -2432,7 +2523,9 @@ staticfiles/
 statics/
 status.php
 steal.php
+sto.php
 storage/
+storage/.env
 store.php
 store/
 stripe.key
@@ -2471,8 +2564,10 @@ systeminfo.php
 t.php
 t.php7
 t3x.php
+taff.php
 tag.php
 tags.php
+taktak.php
 talk-now
 talk-to-a-specialist
 talk-to-an-expert
@@ -2486,9 +2581,11 @@ telescope/
 temp.php
 temp.zip
 temp/
+temp/info.php
 tempfuns.php
 template/
 templates/
+tentang_rmol.php
 terminal.php
 termps.php
 terms
@@ -2526,10 +2623,12 @@ tests/
 text.php
 tgrs.php
 th.php
+thai.php
 theme-insbgqw.php
 theme-insbitn.php
 theme-insynwr.php
 theme.php
+theme/
 themes.php
 themes/
 thh.php
@@ -2587,6 +2686,7 @@ unreal_project/
 unzip.php
 up-UP-up.php
 up.php
+up.php?x=
 update.php
 update/
 updates.php
@@ -2596,7 +2696,10 @@ upload.php
 upload/
 uploaded_script.php
 uploads/
+uploadx.php
+uploat.php
 uploxe.php
+uplozyu.php
 upup.php
 us/
 usage-file.php
@@ -2637,6 +2740,7 @@ variables.tf
 vast.php
 vault/
 vee.php
+vendor.js
 vendor/
 veoblmpa.php
 verify.php
@@ -2656,6 +2760,7 @@ vynypyss.php
 w.php
 w3llstore.php
 wa.php
+wan.php
 wander.php
 warm.PhP7
 wawja.php
@@ -2716,6 +2821,8 @@ wj.php
 wk.php
 wlex.php
 wo.php
+wok.php
+wolv.php
 wordpress
 wordpress.zip
 wordpress/
@@ -2724,6 +2831,7 @@ worksec.php
 woso.php
 wp-/
 wp-2019.php
+wp-2019.php?
 wp-22.php
 wp-Owl.php
 wp-aa.php
@@ -2780,6 +2888,7 @@ wp-freya.php
 wp-good.php
 wp-gr.php
 wp-harri.php
+wp-head.php
 wp-header.php
 wp-hfjd.php
 wp-include.php
@@ -2795,6 +2904,7 @@ wp-l0gin.php
 wp-link.php/
 wp-links-opml.php
 wp-links.php
+wp-links.phps
 wp-load.php
 wp-login.php
 wp-logs.php
@@ -2814,6 +2924,7 @@ wp-p.php7
 wp-plain.php
 wp-radiot.php
 wp-resso.php
+wp-rss4.php
 wp-samp.php
 wp-seno.php
 wp-seo.php
@@ -2851,6 +2962,7 @@ wpc.php?p=
 wpls.php
 wpmahi1.php
 wpo.php
+wpssl.php
 wpx.php
 wrt.php
 ws.php
@@ -2867,6 +2979,8 @@ wso2.php
 wso403.php
 wsoyanz.php
 wsr2.php
+wsx.php
+wteed.php
 wtf.php
 wui.php
 ww.php
@@ -2882,6 +2996,7 @@ x0.php
 x1.php
 x2a.php56
 x2go/
+x3.php
 x3x3x3x.php
 x4.php
 x7.php
@@ -2895,6 +3010,7 @@ xl.php
 xl2023.php
 xl6.php
 xldgenvi.php
+xleet-shell.php
 xleet.php
 xleetshell.php
 xm.php
@@ -2958,6 +3074,7 @@ zc-749.php
 zc-903.php
 zc.php
 zcxb.php
+zde.php
 zeal.php
 zero.php
 zews.php
@@ -2974,6 +3091,7 @@ zona.php
 zoo.php
 zoze.php
 zp.php
+zr.php
 zsec.php
 zt2.php
 zuk.php
