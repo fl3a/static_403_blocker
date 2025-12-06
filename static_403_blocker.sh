@@ -8,10 +8,11 @@
 set -x
 
 PATH=/usr/bin:$PATH
-WEBROOT="$HOME/florian.latzel.io"
 BLOCKLIST="$HOME/repos/static_403_blocker/blocklist.txt"
 
 [ -f "$BLOCKLIST" ] || { echo "Missing blocklist: $BLOCKLIST" >&2; exit 1; }
+[ -n "$1" ] && WEBROOT="$1" || { echo "Missing Argument WEBROOT" >&2; exit 1; }
+[ -d "$WEBROOT" ] || { echo "WEBROOT is not a directory" >&2; exit 1; }
 
 while IFS= read -r LINE; do
 

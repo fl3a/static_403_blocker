@@ -75,14 +75,15 @@ Make the script is executable:
 
     chmod +x static_403_blocker.sh
 
-Place it within your `$PATH` or call it directly:
+Place it within your `$PATH` or call it directly with `WEBROOT` as parameter.\
+Where `WEBROOT` is the absolute path to your website root.\
+
+E.g.:
     
-    ./static_403_blocker.sh
+    static_403_blocker.sh $HOME/florian.latzel.io
 
-Adjust variables inside the script as needed:
-
-- `WEBROOT` – the absolute path to your website root
-- `BLOCKLIST` – the file containing the list of paths to block
+Adjust `BLOCKLIST` variables inside the script as needed.\
+Where `BLOCKLIST` is the file containing the list of paths to block
 
 ## Example integration
 
@@ -91,7 +92,7 @@ https://github.com/fl3a/jekyll_deployment) via [post_exec task](
 https://github.com/fl3a/florian.latzel.io/blob/e766c92f939a1ce7106af8fe8481ba9a476857d6/deploy.conf#L51) 
 for [florian.latzel.io](https://florian.latzel.io/).
 
-    post_exec="/home/kdoz/bin/static_403_blocker.sh"
+    post_exec="/home/kdoz/bin/static_403_blocker.sh $www"
 
 ## Contribute
 
@@ -137,6 +138,8 @@ cat /path/to/404-count.txt >> /path/to/blocklist.txt
 **5. Sort and remove duplicates:**
 
 Vim:
+   
+    vi /path/to/blocklist.txt
 
     :sort u
 
