@@ -138,10 +138,14 @@ cat /path/to/404-count.txt >> /path/to/blocklist.txt
 **5. Sort and remove duplicates:**
 
 Vim:
-   
-    vi /path/to/blocklist.txt
 
-    :sort u
+```   
+vi /path/to/blocklist.txt
+```
+
+```
+:sort u
+```
 
 Shell:
 
