@@ -1,3 +1,8 @@
+*.crt
+*.key
+*.log
+*.pem
+*.save
 --.php
 .AWS_/
 .DS_Store/
@@ -5,11 +10,11 @@
 .alf.php
 .api.env
 .api.local.env
+.api_keys
 .auth.env
 .aws-credentials/
 .aws.env
 .aws/
-.aws/credentials
 .aws_config.js
 .aws_creds.json
 .aws_keys.json
@@ -19,6 +24,7 @@
 .aws_secrets.js
 .aws_secrets.json
 .awsconfig/
+.azure/
 .babelrc
 .backup.sql
 .backup.tar
@@ -35,10 +41,12 @@
 .circleci/
 .classpath
 .cloudfront/
+.config
 .config.js
 .config/
 .core.php
 .cpanel/
+.credentials
 .database
 .database.bak
 .database.env
@@ -61,11 +69,16 @@
 .env
 .env-example
 .env-sample
+.env.*
 .env.*.local
 .env.angular
+.env.aws
+.env.aws_credentials
+.env.azure
 .env.backup
 .env.bak
 .env.bkp
+.env.brevo
 .env.config
 .env.copy
 .env.db
@@ -82,16 +95,22 @@
 .env.elastic
 .env.example
 .env.example.1
+.env.google
+.env.heroku
 .env.js
 .env.json
 .env.live
 .env.local
 .env.local.json
 .env.local.php
+.env.mail
+.env.mailgun
 .env.old
+.env.openai
 .env.orig
 .env.php
 .env.postgres
+.env.postmark
 .env.prod
 .env.prod.json
 .env.prod.local
@@ -99,14 +118,18 @@
 .env.production.local
 .env.project
 .env.remote
+.env.resend
 .env.sample
 .env.save
 .env.sendgrid
+.env.sentry
+.env.slack
 .env.smtp
 .env.sqlite
 .env.stage
 .env.staging
 .env.staging.json
+.env.stripe
 .env.template
 .env.test
 .env.test.local
@@ -114,6 +137,7 @@
 .env.tmp
 .env.travis
 .env.txt/
+.env.vault
 .env.www
 .env.zip
 .env1
@@ -155,6 +179,8 @@
 .login
 .my.cnf
 .mysql_history
+.neon_credentials.json
+.netlify/
 .netrc
 .next/
 .npmrc
@@ -163,11 +189,13 @@
 .php.ini
 .phpinfo
 .phpinfo.php
+.planetscale/
 .prettierrc
 .production
 .profile
 .project
 .pypirc
+.railway/
 .remote
 .remote.env
 .s3/
@@ -176,6 +204,7 @@
 .s3cfg.old
 .s3cfg~
 .saml2aws/
+.secrets
 .sendgrid/
 .service.env
 .settings.json
@@ -184,6 +213,7 @@
 .smtp.json
 .ssh/
 .stylelintrc
+.supabase/
 .svn/
 .svnignore
 .terraform/
@@ -236,6 +266,7 @@
 .well-known/info.php
 .well-known/ktlldmmx.php
 .well-known/log.php
+.well-known/login.php
 .well-known/mfeypwze.php
 .well-known/nam.php
 .well-known/nzhlgkwk.php
@@ -456,6 +487,7 @@ Contrller.php
 Controls/
 Core/
 Dockerfile
+EM.php
 ENKI.php
 FCKeditor/
 FileMgrFiles/
@@ -533,6 +565,7 @@ Zeiss.php
 _all_dbs
 _all_dbs/
 _backup/
+_debug/
 _debugbar
 _ignition/
 _logs.php
@@ -574,6 +607,7 @@ about
 about-us
 about.php
 about.php7
+about/
 about/function.php
 about/function.php?
 about3.php
@@ -583,6 +617,7 @@ ac.php
 acc.php
 accah.php
 acces.php
+accesocampus/
 access.log
 access_token
 accesson.php
@@ -604,6 +639,7 @@ admin-ajax.php
 admin-app/
 admin-header.php
 admin-panel
+admin-panel/
 admin-post.php
 admin.html
 admin.php
@@ -614,14 +650,20 @@ admin1.php
 admin404.php
 admin836.php
 admin_area
+admin_area/
 adminarea
+adminarea/
 adminer
 adminer.php
+adminer/
 adminfuns.php
 adminfuns.php7
 administrator/
 administratorlogin
+administratorlogin/
 adminpanel
+adminpanel/
+adminsite/
 admir.php
 ads.txt
 ae.php
@@ -698,6 +740,7 @@ ansible.cfg
 ansible/
 anskrit.php
 ant.php
+anthropic_credentials.json
 anz.php
 ao.php
 ap.php
@@ -707,14 +750,18 @@ api-gateway/
 api-token
 api.php
 api/
+api/.env
 api137.php
 api2/
 api_key
+api_keys.json
 api_keys/
 apikey
+apikeys.json
 apis/
 apit.php
 aporrhiegma.php
+app.config
 app.js
 app.js.bak
 app.php
@@ -723,6 +770,7 @@ app.yaml
 app/
 app/.env
 app_dev.php
+app_dev.php/
 apple-app-site-association/
 application-dev.properties
 application.log
@@ -730,6 +778,7 @@ application.properties
 application.yaml
 application.yml
 application/
+application/.env
 apps/
 appsettings.Development.json
 appsettings.Local.json
@@ -781,6 +830,7 @@ assets/.env.old
 assets/.env.save
 assets/admin.php
 assets/admin/
+assets/as.php
 assets/atomlib.php
 assets/backend/
 assets/bundle.js
@@ -791,6 +841,7 @@ assets/filemanager/
 assets/fire_admin/images/logo.png
 assets/global/
 assets/images/
+assets/include/
 assets/index/kuailian/image/favicon.ico
 assets/item.php
 assets/javascripts/
@@ -827,6 +878,7 @@ aua.php
 aucxcocoxo.php
 aucxzso.php
 audio/
+auth.json
 auth.php
 auth/
 autoload_classmap.php
@@ -873,6 +925,8 @@ ayk.php
 az.php
 azra.php
 azure-pipelines.yml
+azure.json
+azure_credentials.json
 b.php
 b1.php
 b10.php
@@ -892,6 +946,7 @@ backend.tf
 backend/
 backend/.env
 backoffice
+backoffice/
 backup.bak
 backup.php
 backup.sql
@@ -948,6 +1003,7 @@ bk/
 bkxzo.php
 bla.php
 bless.php
+bless/
 bless10.php
 bless11.php
 bless2.php
@@ -992,6 +1048,7 @@ boyfile.php
 bp.php
 bqcheck.php
 brand.php
+brevo_credentials.json
 bridge2cart/bridge.php
 browse.php
 bs1.php
@@ -1019,6 +1076,7 @@ byp7.php
 byp8.php
 bypass.php
 bypltspd.php
+byy.php
 c.php
 c1.php
 c10.php
@@ -1050,11 +1108,14 @@ cbrfo.php
 cc.php
 ccaef.php
 cccc.php
+ccou.php
 ccx/
 ceo.php
 certs/
 cf.php
+cfide/
 cfile.php
+cfjavascripts/
 cgi-bin/
 cgi-bin/baxa1.phP8
 charger.php
@@ -1091,6 +1152,7 @@ class-wp.php
 class.1.php
 class.api.php
 class.php
+class/editor/
 class17.php
 class19.php
 class20.php
@@ -1133,6 +1195,7 @@ comfunctions.php
 command.php
 comment/
 common.php
+common/
 compare.php
 components/
 composer.json
@@ -1164,18 +1227,19 @@ config.xml
 config.yaml
 config.yml
 config/
-config/.env
 config_.php
 configs.php
 configs/
 configuration.backup
 configuration.bak
 configuration.copy
+configuration.json
 configuration.old
 configuration.orig
 configuration.php
 configuration.php.bak
 configuration.save
+configuration/
 configuration~
 config~
 conflg.php
@@ -1211,9 +1275,11 @@ content.php
 content/
 contents.php/
 control
+control/
 controller/
 controllers/
 controlpanel
+convertkit_credentials.json
 cookbooks/
 cookie.php
 cool.php
@@ -1225,6 +1291,7 @@ core/TwitterBootstrap/
 core885.php
 cp.php
 cpanel
+cpanel/
 cra.php
 credentials.json
 credentials.yml
@@ -1325,6 +1392,7 @@ demo/
 dep.php
 deploy/
 deployment.php
+deployment/
 des.php
 desktop_app/
 details/
@@ -1343,8 +1411,10 @@ diesinker.php
 dinah.php
 dir.php
 directadmin
+directadmin/
 disagreed.php
 disaos.php
+discord_credentials.json
 disengaging.php
 disquiet.php
 dist/
@@ -1352,9 +1422,11 @@ django_app/
 dlu.php
 dng.php
 doc.php
+docker-compose.*.yml
 docker-compose.dev.yml
 docker-compose.override.yml
 docker-compose.prod.yml
+docker-compose.yaml
 docker-compose.yml
 docker-compose/
 docker/
@@ -1365,6 +1437,7 @@ docs/
 documentroot.php
 dodjxg.php
 doiconvs.php
+dokuwiki/
 doll.php
 dom.php
 domains.php
@@ -1375,6 +1448,7 @@ dove.php
 download.php
 download/
 downloader
+dox.php
 dr.php
 drop-us-a-line
 dropdown.php
@@ -1434,6 +1508,7 @@ email.json
 email/
 en-us/
 en/
+en/.env
 en0.php
 enclas.php
 engine.php
@@ -1465,6 +1540,7 @@ error/
 error1.php
 error_log
 errorfile.php
+errors.log
 ertg.php
 es.php
 es/.env
@@ -1485,6 +1561,7 @@ export.sql
 export.sql.gz
 ext.php
 ez.php
+f-401.php
 f.php
 f1.php
 f10.php
@@ -1587,6 +1664,7 @@ flash.php
 flask_app/
 flex.php
 flower.php
+fly.toml
 flyriver.com
 fm.php
 fm.php?p=
@@ -1659,6 +1737,8 @@ gatsby-node.js
 gatsby-ssr.js
 gawean.PhP7
 gb.php
+gcp-credentials.json
+gcp-key.json
 gdftps.php
 gdn.php
 ge.php
@@ -1729,6 +1809,7 @@ gold.php
 golden.php
 good.php
 goods.php
+google-credentials.json
 gool.php
 gorila.php
 goto.php
@@ -1804,6 +1885,7 @@ horizon
 host_vars/
 hosting
 hosting.json
+hosting/
 hplfuns.php
 hq.php
 ht.php
@@ -1821,6 +1903,7 @@ icon.php
 id.php
 id_dsa
 id_ecdsa
+id_ed25519
 id_rsa
 id_rsa.pub
 ids.php
@@ -1850,6 +1933,7 @@ index.backup
 index.bak
 index.bak.php
 index.copy
+index.html
 index.js
 index.old
 index.old.php
@@ -1950,8 +2034,12 @@ jqueryfileupload/
 js
 js.php
 js/
+js/.env
+js/editor/
+js/fckeditor/
 js/fm.php
 js/index.php
+js/main.js
 json.php
 jsp.php
 just2.php
@@ -1959,6 +2047,7 @@ juuuu.php
 jx.php
 jyntqzmk.php
 k.php
+k8s.yml
 k8s/
 k90.php
 kairolin.php
@@ -1973,6 +2062,7 @@ kaza.php
 kcfinder/
 kesa.php
 keu.php
+keys.json
 keys.php
 keys/
 kfyo.php
@@ -1989,10 +2079,14 @@ known_hosts
 kontakt
 kr.php
 krypton.php
+kube/
+kubeconfig
+kubernetes.yml
 kubernetes/
 kwm4.php
 kyami.php
 kyc/
+kyc/.env
 l.php
 l/
 l10n.php
@@ -2002,7 +2096,10 @@ lala.php
 lambda4.php
 lanbai.php
 lara/
+laravel.log
 laravel/
+laravel/.env
+laravel/core/.env
 latest/
 latzel.io.zip
 latzel.sql
@@ -2041,11 +2138,13 @@ library/
 libs.php
 license.php
 license.txt
+liferay/
 light.cgi
 light.php
 link.php
 linusadmin-phpinfo.php
 list.php
+listas-plugins/
 litanies.php
 lite.php
 lites.php
@@ -2081,15 +2180,18 @@ lol.php
 loli.php
 lopst.php
 lrxqxgbi.php
+lsd.php
 lte7.php
 ltsxppjj.php
 lufix.php
+lufix1.php
 luna.php
 luxe.php
 lv.php
 lx.php
 lyns.php
 m.php
+m7n1t5
 ma.php
 ma1.php
 magento/
@@ -2099,14 +2201,17 @@ mah/function.php
 mail-config.php
 mail.php
 mail/
+mailchimp_credentials.json
 mailer/
 mailer_config.php
+mailgun-credentials.json
 main.dev.js
 main.js
 main.php
 main.tf
 main.yml
 main/
+main/.env
 maint.php
 maintenance.php
 makeasmtp.php
@@ -2116,6 +2221,7 @@ man.php
 man.php7
 manage.py
 management
+management/
 manager.php
 manager/
 mango.php
@@ -2176,6 +2282,7 @@ mod.php
 moddofuns.php
 moderation.php
 moderator
+moderator/
 modernize.php
 modules.php
 modules/
@@ -2201,6 +2308,7 @@ muse.php
 mws.php
 my.cnf
 my_env/
+myadmi/n
 myadmin
 myproject/
 mysql.php
@@ -2223,8 +2331,10 @@ nc5.php
 ncms.php
 ncx.php
 nee.php
+neon_credentials.json
 neshe
 neshe.php
+neshe/
 netlify.toml
 network.php
 networks.php
@@ -2293,6 +2403,7 @@ nyntn.php
 o.php
 o1i2ien.php
 o2ll13.php
+oauth.json
 oauth.php
 oauth/
 obfuscous.php
@@ -2365,18 +2476,21 @@ page.php
 pages.php
 palsy.php
 panel
+panel/
 partner.html
 partner/
 parturiency.php
 pass.php
 past.php
 past1.php
+paypal_credentials.json
 pd.php
 pekok.php
 pen.php
 pent.php
 pepe.php
 per.php
+personal_access_token.txt
 pg_dump.sql
 pgsql.dump
 phi2.php
@@ -2396,6 +2510,7 @@ php5.php
 php7.php
 php8.php
 phpMyAdmin/
+php_error.log
 php_error_log
 php_info.php
 php_info.php.backup
@@ -2425,6 +2540,7 @@ phpinfo.php~
 phpinfo.phtml
 phpinfo/
 phpinfo2.php
+phpinfo_query
 phpinfos.php
 phpmyadmin/
 phpmyinfo
@@ -2438,11 +2554,13 @@ pi.php
 pinfo.php
 pipeline/
 pkm.php
+planetscale_credentials.json
 platform/
 play.php
 playbooks/
 playground
-plesk
+playground/
+plesk/
 plex1.php
 plss3.php
 plugin.php
@@ -2463,6 +2581,7 @@ pop.php
 portal
 portal/
 post.php
+postmark_credentials.json
 postnews.php
 pow.php
 pp.php
@@ -2532,6 +2651,7 @@ raf.php
 rafa.php
 rafu.php
 rails_app/
+railway.json
 rak.php
 ralphwetzel/
 randkeyword.PhP7
@@ -2562,6 +2682,7 @@ refund.php
 register
 register/
 rei.php
+render_credentials.json
 repair.php
 repeater.php
 req.php
@@ -2608,6 +2729,7 @@ ru.php
 ruby_app/
 rules.php
 run.php
+run/
 runtime.js
 runtime/
 runtime/cache/5.php
@@ -2627,6 +2749,7 @@ s3-credentials.bak
 s3-credentials.json
 s3.js
 s3.php
+s3.yml
 s3/
 sHS.php
 sa.php
@@ -2651,6 +2774,7 @@ say-hello
 sbin/
 sbryl.php
 scarbook.php
+schallfuns.php
 schedule-call
 schedule-demo
 schedule-meeting
@@ -2693,6 +2817,7 @@ sendgrid_keys.py
 sendgrid_keys.txt
 sendinblue.env
 sendinblue.json
+sendinblue_credentials.json
 seo-joy.cgi
 ser.php
 server
@@ -2708,6 +2833,7 @@ server/
 server_info.php
 serverinfo.php
 servers.php
+service-account.json
 service.php
 service/
 services/
@@ -2732,6 +2858,7 @@ settings.php.old
 settings.py
 settings.save
 settings.yaml
+settings.yml
 settings/
 settings~
 setup-config.php
@@ -2756,6 +2883,7 @@ shell_wso.php7
 shellalfa.php
 shellv3.php
 shelp.php
+shine.php
 shlo.php
 shoha.php
 shop.php
@@ -2774,6 +2902,7 @@ sim.php
 simp.php
 simple.php
 simple/
+site-backup.tar.gz
 site-info.php
 site.conf
 site.php
@@ -2845,6 +2974,7 @@ ssss.php
 st.php
 stage/
 staging
+staging/
 star.php
 starry.php
 stat.php
@@ -2862,6 +2992,7 @@ store.php
 store/
 stripe.key
 stripe_api_key
+stripe_credentials.json
 stripe_secret
 sts.php
 stuk4z.php
@@ -2874,11 +3005,13 @@ success.php
 sudo.php
 summary.php
 sun.php
+supabase_credentials.json
 suu.php
 suy.php
 swa.php
 swagger-ui
 swagger-ui.html
+swagger-ui/
 swagger.js
 swagger.json
 swagger/
@@ -2890,6 +3023,7 @@ syl1yt.php
 sym403.php
 symfony/
 sysadmin
+sysadmin/
 sysinfo.php
 system.php
 system.php.php
@@ -2898,6 +3032,7 @@ system_log.php
 systeminfo.php
 t.php
 t.php7
+t1.php
 t3x.php
 taff.php
 tag.php
@@ -2980,6 +3115,7 @@ tj.php
 tmp/
 tmpls.php
 token
+tokens.json
 ton.php
 too.php
 tool/
@@ -3037,6 +3173,7 @@ up-UP-up.php
 up.php
 up.php?x=
 up2.php
+up4.php
 update.php
 update/
 updates.php
@@ -3063,6 +3200,7 @@ user_data/
 user_secrets.yml
 userfuns.php
 users.php
+users/
 users/sign_in
 usr/
 ut.php
@@ -3099,6 +3237,7 @@ vee.php
 vendor.js
 vendor/
 veoblmpa.php
+vercel.json
 verify.php
 version.php
 video.php
@@ -3143,11 +3282,13 @@ web.zip
 web/
 web3/
 webadmin.php
+webadmin/
 webdb.php
 webhook.php
 webjars/
 webmail/
 webmaster
+webmaster/
 webpack.config.js
 webroot_path/
 webshell
@@ -3352,6 +3493,7 @@ wp-tot.php
 wp-trackback.php
 wp-trocs.php
 wp-update.php
+wp-user.php
 wp-wlx.php
 wp-wso.php
 wp-x.php
@@ -3399,6 +3541,7 @@ wsx.php
 wsz.php
 wteed.php
 wtf.php
+wtz.php
 wui.php
 ww.php
 ww1.php
@@ -3430,6 +3573,7 @@ x7.php
 xBrain.php
 xD.php
 xampp/
+xaz.php
 xc.php
 xcc.php
 xcv.php
